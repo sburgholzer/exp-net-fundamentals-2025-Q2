@@ -10,3 +10,5 @@
 - Launched a Redhat Server EC2 instance similar to Ubuntu server.
 - Associated Elastic IPs to each server for use during the bootcamp, will release them back to AWS when bootcamp is over.
 - **Note**: This was clickops, meaning all done in AWS Web Console
+
+### [Automate VPC Deployment with CFN](../projects/env_automation/Journal.md)
