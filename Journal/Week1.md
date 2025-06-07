@@ -1,6 +1,5 @@
 # Projects Done in Week 1
 
-
 ### Setup Cloud Environment
 - This was to setup the VPC in AWS (instructor used AWS and as an AWS user myself, I went AWS as well), for the bootcamp.
 - We also created a key (or used existing key) for access to our EC2 instances.
