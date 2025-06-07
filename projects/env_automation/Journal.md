@@ -5,5 +5,41 @@ This is taking what we did in Setup Cloud Environment, which was click ops, and 
 
 ## Design Decisions
 
-We will be using AWS S3 to store our state file, and will be using the S3 Object Locking to do everything in S3 and not have to worry about a DynamoDB table. This S3 bucket I created manually as in my opinion it is easier, and also ensures that if we accidently run terraform destroy when we didn't mean to, that we don't loose the bucket, especially if you decide to have one bucket for all state files.
+We will be using AWS S3 to store our state file, and will be using the S3 Object Locking to do everything in S3 and not have to worry about a DynamoDB table. This S3 bucket I created manually as in my opinion it is easier, and also ensures that if we accidentally run terraform destroy when we didn't mean to, that we don't loose the bucket, especially if you decide to have one bucket for all state files.
 
+Given this is a bootcamp, and more of a lab environment to understand networking, I have decided I will have everything in one .tf file for simplicity. Additionally as we are not worried about Multi-Region, Multi-AZ, multi-environment, I will not worry about breaking my project into regions and environments.
+
+I'm using openTofu v1.10.0-rc1 to get the S3 object locking feature. As this is not a production workload, I am comfortable using a release candidate for this project.
+
+## VPC Settings
+
+These are the VPC Settings we observed Tim setup for our cloud environment in AWS:
+
+- VPC IPv4 CIDR Block: 10.200.123.0/24
+- Ipv6 CIDR Block: No
+- Number of AZs: 1
+- Number of public subnets: 1
+- Number of private subnets: 1
+- NAT GATEWAYS: None
+- VPC Endpoints: None
+- DNS Options: Enable DNS Hostnames
+- DNS options: Enable DNS Resolution
+
+## EC2 Settings
+
+- Windows Sever
+- Ubuntu Server
+- Red Hat Server
+- The three above servers in public subnet
+- The three above servers getting Elastic IPs assigned to them
+- The three above servers also having an ENI interface in the private subnet
+- Security Group allowing all traffic from the VPC, RDP from the user's IP and SSH from the user's IP
+
+### Additional uses of LLM
+
+- Used it to create a .gitignore for Terraform/openTofu
+
+
+### Issues with LLM
+
+- It didn't remember it had to use ```use_lockfile = true``` in the backend block
