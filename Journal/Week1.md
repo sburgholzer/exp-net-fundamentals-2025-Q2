@@ -19,6 +19,7 @@
 - Went over the Network Connection Details screen
 - Went over how to manually set the device's IP address (mostly done for on-prem devices)
 - Went over the ipconfig command (including /all)
+- [A Project using Azure for IP Address Management was completed](../projects/ip-address-management/)
 
 #### Ubuntu
 - Found out ifconfig isn't really used as much anymore
