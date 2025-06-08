@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualMachineName": {
+            "value": "net-fun-windows-server"
+        },
+        "virtualMachineComputerName": {
+            "value": "net-fun-windows"
+        },
+        "adminUsername": {
+            "value": "adminuser"
+        },
+
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "vnetName": {
+            "value": "net-fun-windows-server-vnet"
+        },
+        "subnetName": {
+            "value": "subnet1"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/16"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpName": {
+            "value": "net-fun-windows-server-pip"
+        },
+        "nsgName": {
+            "value": "net-fun-windows-server-nsg"
+        },
+        "nicName": {
+            "value": "net-fun-windows-server-nic"
+        },
+        "imagePublisher": {
+            "value": "MicrosoftWindowsServer"
+        },
+        "imageOffer": {
+            "value": "WindowsServer"
+        },
+        "imageSku": {
+            "value": "2025-datacenter-azure-edition"
+        },
+        "imageVersion": {
+            "value": "latest"
+        }
+    }
+}
