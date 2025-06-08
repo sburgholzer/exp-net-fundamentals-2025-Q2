@@ -1,4 +1,4 @@
-# Projects Done in Week 1
+# Projects Done and things Learned in Week 1
 
 ### Setup Cloud Environment
 - This was to setup the VPC in AWS (instructor used AWS and as an AWS user myself, I went AWS as well), for the bootcamp.
@@ -11,3 +11,11 @@
 - **Note**: This was clickops, meaning all done in AWS Web Console
 
 ### [Automate VPC Deployment with CFN](../projects/env_automation/Journal.md)
+
+### IP Address Management
+
+#### Windows
+- Showed how to get to the network settings via Control panel
+- Went over the Network Connection Details screen
+- Went over how to manually set the device's IP address (mostly done for on-prem devices)
+- Went over the ipconfig command (including /all)
