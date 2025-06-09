@@ -1,5 +1,7 @@
 # Projects Done and things Learned in Week 1
 
+Any links lead to Journals, more generalized info in README.md for each project (more of what you are looking for in grading I believe).
+
 ### Setup Cloud Environment
 - This was to setup the VPC in AWS (instructor used AWS and as an AWS user myself, I went AWS as well), for the bootcamp.
 - We also created a key (or used existing key) for access to our EC2 instances.
@@ -31,4 +33,6 @@
     - on AWS Ubuntu it's located at /etc/netplan/50-cloud-init.yaml
     - after making changes use netplan try to test your changes, after about 2 minutes it'll revert back, so if you accidentally made a breaking change, you don't loose full networking access to your server/pc.
 
-### [Packet Tracer Lab](../projects/packet-tracer//Journal.md)
+### [Packet Tracer Lab](../projects/packet-tracer/Journal.md)
+
+### [Windows Networking Tools](../projects/windows-networking-tools/Journal.md)
