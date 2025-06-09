@@ -31,3 +31,4 @@
     - on AWS Ubuntu it's located at /etc/netplan/50-cloud-init.yaml
     - after making changes use netplan try to test your changes, after about 2 minutes it'll revert back, so if you accidentally made a breaking change, you don't loose full networking access to your server/pc.
 
+### [Packet Tracer Lab](../projects/packet-tracer//Journal.md)
